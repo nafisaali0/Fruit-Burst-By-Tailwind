@@ -15,10 +15,15 @@
     <!-- daisy UI Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Fruit Burst Website</title>
     <style>
         .font {
             font-family: 'Lato', sans-serif;
+        }
+
+        .background {
+            background-image: url("images/banner1.png"), rgba(18, 18, 18, 0.70);
+            background-blend-mode: overlay;
         }
     </style>
     <script>
@@ -27,6 +32,12 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-color': '#F85559',
+                        'star-color': '#cf9a2a',
+                        'nav-bg': '#ecad44',
+                        'primary-color-two': '#e2513f',
+                        'green-one': '#18684d',
+                        'green-two': '#2d8c5a'
                     }
                 }
             }
@@ -34,7 +45,94 @@
     </script>
 </head>
 
-<body>
+<body class="font">
+    <!-- nav section start -->
+    <header class="max-w-screen-xl mx-auto overflow-hidden h-64 lg:my-8 lg:h-auto  ">
+        <div class="navbar flex justify-between lg:py-6 lg:justify-evenly items-center lg:rounded-full lg:bg-nav-bg ">
+            <div class="hidden lg:flex">
+                <ul class="flex gap-8 items-center text-base font-medium text-black cursor-pointer">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="w-10" src="images/logo.png" alt="fruit logo">
+                <a
+                    class="btn btn-ghost hover:bg-inherit normal-case text-2xl lg:text-4xl md:text-3xl font-bold text-black">Fruit
+                    Burst</a>
+            </div>
+            <div class="hidden rounded-full px-7 py-2 bg-white lg:flex">
+                <input type="text" placeholder="Search here"
+                    class="bg-transparent border-none placeholder:text-[#12121266] focus:outline-none" />
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <!-- mobile nav section -->
+            <div class="lg:hidden">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-1 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-72">
+                        <li><a class="justify-center">Home</a></li>
+                        <li><a class="justify-center">About Us</a></li>
+                        <li><a class="justify-center">Shop</a></li>
+                        <li><a class="justify-center">All Fruits</a></li>
+                        <div class="flex justify-between rounded-full px-3 py-2 bg-nav-bg mt-3">
+                            <input type="text" placeholder="Search here"
+                                class="bg-transparent border-none placeholder:text-xs placeholder:text-black focus:outline-none" />
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav section end -->
+    <!-- hero section start -->
+    <section class="max-w-screen-xl mx-auto overflow-hidden -my-32 lg:my-11">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/banner4.png" class="w-full"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/banner1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end -->
 
 
 

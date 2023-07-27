@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav-icon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +28,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-color': '#F85559',
                         'star-color': '#cf9a2a',
                         'nav-bg': '#ecad44',
                         'primary-color-two': '#e2513f',
-                        'green-one': '#18684d',
-                        'green-two': '#2d8c5a'
                     },
                     backgroundImage: {
                         'bg': "url(./images/banner1.png)"
@@ -47,7 +46,7 @@
     <header class="max-w-screen-xl mx-auto overflow-hidden h-64 lg:my-8 lg:h-auto  ">
         <div class="navbar flex justify-between lg:py-6 lg:justify-evenly items-center lg:rounded-full lg:bg-nav-bg">
             <div class="hidden lg:flex">
-                <ul class="flex gap-8 items-center text-base font-medium text-black cursor-pointer">
+                <ul class="flex gap-8 items-center text-2xl font-medium text-black cursor-pointer">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
@@ -56,9 +55,9 @@
             </div>
             <div>
                 <img class="w-10" src="images/logo.png" alt="fruit logo">
-                <a
-                    class="btn btn-ghost hover:bg-inherit normal-case text-2xl lg:text-4xl md:text-3xl font-bold text-black">Fruit
-                    Burst</a>
+                <a class="btn btn-ghost hover:bg-inherit normal-case text-2xl lg:text-4xl md:text-3xl font-bold text-black">
+                    Fruit Burst
+                </a>
             </div>
             <div class="hidden rounded-full px-7 py-2 bg-white lg:flex">
                 <input type="text" placeholder="Search here"
@@ -74,7 +73,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
+                                d="M4 6h16M4 12h8m-8 6h16"/>
                         </svg>
                     </label>
                     <ul tabindex="0"
@@ -85,7 +84,7 @@
                         <li><a class="justify-center">All Fruits</a></li>
                         <div class="flex justify-between rounded-full px-3 py-2 bg-nav-bg mt-3">
                             <input type="text" placeholder="Search here"
-                                class="bg-transparent border-none placeholder:text-xs placeholder:text-black focus:outline-none" />
+                                class="bg-transparent border-none placeholder:text-xs placeholder:text-black focus:outline-none"/>
                             <button>
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -176,7 +175,7 @@
     </section>
     <!-- hero section end -->
     <!-- fruit-card-start -->
-    <section class="max-w-screen-lg mx-auto overflow-hidden hidden lg:flex relative -top-44 py-5 px-4 bg-white">
+    <section class="max-w-screen-lg mx-auto overflow-hidden hidden lg:flex relative -top-44 py-5 px-4 bg-white drop-shadow-lg">
         <div class="grid grid-cols-1 gap-2 bg-white lg:grid-cols-5 ">
             <!-- card-one -->
             <div class="card  bg-base-100 ">
@@ -227,13 +226,14 @@
     </section>
     <!-- fruit-card-end -->
     <!-- countdown section start -->
-    <section class="max-w-screen-xl mx-auto overflow-hidden mt-32 p-5 lg:my-0 lg:py-0 md:my-44">
-        <div class="flex flex-col items-center flex-1 lg:flex-row md:flex-row ">
+    <section class="max-w-screen-xl mx-auto overflow-hidden mt-44 p-5 lg:mt-0 lg:py-0 md:mt-44">
+        <div class="flex flex-col items-center flex-1 lg:flex-row md:flex-row">
             <div class="text-center lg:text-left md:text-left">
                 <h3 class="text-4xl font-extrabold">Deal of the day</h3>
                 <p class="text-base font-medium my-4 lg:w-1/2 md:w-2/3 ">Contrary to popular belief, is not simply
                     random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
-                    years old.</p>
+                    years old.
+                </p>
             </div>
             <!-- countdown -->
             <div class="flex-1 grid grid-flow-col gap-5 text-center auto-cols-max">
@@ -274,7 +274,8 @@
                     <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title border-b-2 border-b-[#1212121A] text-3xl font-bold my-2 py-2">12.90$ - 18.85$
+                    <h2 class="card-title border-b-2 border-b-[#1212121A] text-3xl font-bold my-2 py-2">
+                        12.90$ - 18.85$
                     </h2>
                     <p>Apples</p>
                     <!-- star part -->
@@ -333,6 +334,7 @@
                                     <button class="btn btn-outline">Close</button>
                                     <button class="btn">Buy More</button>
                                 </div>
+                            </div>   
                         </form>
                     </dialog>
                 </div>
@@ -340,10 +342,11 @@
             <!-- card two -->
             <div class="card bg-base-100  rounded-lg border-2 border-[#1212121A]">
                 <figure class="px-10 pt-10">
-                    <img src="images/fruit7.png" alt="fruit" class="rounded-xl" />
+                    <img src="images/fruit7.png" alt="fruit" class="rounded-xl"/>
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title border-b-2 border-b-[#1212121A] text-3xl font-bold my-2 py-2">12.90$ - 18.85$
+                    <h2 class="card-title border-b-2 border-b-[#1212121A] text-3xl font-bold my-2 py-2">
+                        12.90$ - 18.85$
                     </h2>
                     <p>Apples</p>
                     <!-- star part -->
@@ -402,6 +405,7 @@
                                     <button class="btn btn-outline">Close</button>
                                     <button class="btn">Buy More</button>
                                 </div>
+                            </div>
                         </form>
                     </dialog>
                 </div>
@@ -441,7 +445,8 @@
                             </figure>
                             <div class="card-body items-center text-center">
                                 <h2 class="card-title border-b-2 border-b-[#1212121A] text-3xl font-bold my-2 py-2">
-                                    12.90$ - 18.85$</h2>
+                                    12.90$ - 18.85$
+                                </h2>
                                 <p>Apples</p>
                                 <div class="rating rating-lg rating-half my-4">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -471,6 +476,7 @@
                                     <button class="btn btn-outline">Close</button>
                                     <button class="btn">Buy More</button>
                                 </div>
+                            </div>
                         </form>
                     </dialog>
                 </div>
@@ -538,8 +544,9 @@
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
                                     <button class="btn btn-outline">Close</button>
-                                    <button class="btn">Buy More</button>
+                                    <button class="btn">Buy More</button>                            
                                 </div>
+                            </div>    
                         </form>
                     </dialog>
                 </div>
@@ -552,7 +559,7 @@
     <!-- shop section end -->
     <!-- team section start-->
     <section
-        class="max-w-screen-xl mx-auto overflow-hidden relative bg-bg bg-no-repeat bg-cover bg-center h-full my-32">
+        class="max-w-screen-xl mx-auto overflow-hidden relative bg-bg bg-no-repeat bg-cover bg-center h-full mt-32">
         <div class="absolute h-full w-full bg-gray-900 bg-opacity-30"></div>
         <div class="p-8">
             <div class="flex flex-col justify-center items-center">
@@ -621,7 +628,111 @@
     </section>
     <!-- team section end-->
     <!-- about us section start-->
+    <section class="max-w-screen-xl mx-auto overflow-hidden mt-32 p-5">
+        <div class="flex flex-col justify-center items-center flex-1">
+            <h2 class="text-3xl font-bold text-center">Why Choose Us</h2>
+            <p class="text-base font-medium text-center lg:w-1/2 my-5">
+                Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+        </div>       
+        <!-- 1st parent div -->
+        <div class="flex flex-col gap-7 items-center lg:flex-row">
+            <!--  1st parent-1st child -->
+            <!-- 2nd parent div -->
+            <div class="flex gap-10 flex-col-reverse items-center lg:flex-row">
+                <!-- 2nd parent div 1st child -->
+                <div>
+                    <!-- card one -->
+                    <div class="flex flex-col gap-4 items-center text-center bg-base-100 mb-4 lg:w-96 lg:flex-row lg:items-start lg:text-left">
+                        <figure class="w-1/6 h-1/6 p-2 bg-[#12121219] rounded-full flex justify-center items-center md:w-20 md:h-20 lg:w-1/4 lg:h-1/4 lg:p-3">
+                            <img src="images/icons/icon-1.png" alt="Movie" />
+                        </figure>
+                        <div class="">
+                            <h2 class="text-2xl font-bold border-b-2 border-b-[#1212121A] pb-1">Dedicated Team
+                            </h2>
+                            <p class="my-3">
+                                Professional employees are there for you to pick the most amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card two -->
+                    <div class="flex flex-col gap-4 items-center text-center bg-base-100 mb-4 lg:w-96 lg:flex-row lg:items-start lg:text-left ">
+                        <figure class="w-1/6 h-1/6 p-2 bg-[#12121219] rounded-full flex justify-center items-center md:w-20 md:h-20 lg:w-1/4 lg:h-1/4">
+                            <img src="images/icons/icon-2.png" alt="Movie" />
+                        </figure>
+                        <div class="">
+                            <h2 class="text-2xl font-bold border-b-2 border-b-[#1212121A] pb-1">Fresh is Best
+                            </h2>
+                            <p class="my-3">
+                                Professional employees are there for you to pick the most amazing and fresh fruits..
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card three-->
+                    <div class="flex flex-col gap-4 items-center text-center bg-base-100 mb-4 lg:w-96 lg:flex-row lg:items-start lg:text-left">
+                        <figure class="w-1/6 h-1/6 p-2 bg-[#12121219] rounded-full flex justify-center items-center md:w-20 md:h-20 lg:w-1/4 lg:h-1/4">
+                            <img src="images/icons/icon-3.png" alt="Movie" />
+                        </figure>
+                        <div class="">
+                            <h2 class="text-2xl font-bold border-b-2 border-b-[#1212121A] pb-1">Gift Certificates
+                            </h2>
+                            <p class="my-3">
+                                Professional employees are there for you to pick the most amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd parent div 2nd child -->
+                <div>
+                    <img src="images/whychoose1.png" alt="fruit basket">
+                </div>
+            </div>
+            <!-- 1st parent-2nd child -->
+            <div>
+                <!-- card -->
+                <!-- card one-->
+                <div class="flex flex-col gap-4 items-center text-center bg-base-100 mb-4 lg:w-96 lg:flex-row-reverse lg:items-start lg:text-right">
+                    <figure class="w-1/6 h-1/6 p-2 bg-[#12121219] rounded-full flex justify-center items-center md:w-20 md:h-20 lg:w-1/4 lg:h-1/4">
+                        <img src="images/icons/icon-4.png" alt="Movie"/>
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-bold border-b-2 border-b-[#1212121A] pb-1">Integrated Supplier
+                        </h2>
+                        <p class="my-3">
+                            Professional employees are there for you to pick the most amazing and fresh fruits.
+                        </p>
+                    </div>
+                </div>
+                <!-- card two -->
+                <div class="flex flex-col gap-4 items-center text-center bg-base-100 mb-4 lg:w-96 lg:flex-row-reverse lg:items-start lg:text-right">
+                    <figure class="w-1/6 h-1/6 p-2 bg-[#12121219] rounded-full flex justify-center items-center md:w-20 md:h-20 lg:w-1/4 lg:h-1/4">
+                        <img src="images/icons/icon-5.png" alt="Movie" />
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-bold border-b-2 border-b-[#1212121A] pb-1">Sustainable Practice
+                        </h2>
+                        <p class="my-3">
+                            Professional employees are there for you to pick the most amazing and fresh fruits.
+                        </p>
+                    </div>
+                </div>
+                <!-- card three-->
+                <div class="flex flex-col gap-4 items-center text-center bg-base-100 mb-4 lg:w-96 lg:flex-row-reverse lg:items-start lg:text-right">
+                    <figure class="w-1/6 h-1/6 p-2 bg-[#12121219] rounded-full flex justify-center items-center md:w-20 md:h-20 lg:w-1/4 lg:h-1/4">
+                        <img src="images/icons/icon-6.png" alt="Movie" />
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-bold border-b-2 border-b-[#1212121A] pb-1">The Benefits Only
+                        </h2>
+                        <p class="my-3">
+                            Professional employees are there for you to pick the most amazing and fresh fruits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </section>
     <!-- about us section end-->
     <!-- footer section start -->
     <footer class="footer footer-center px-10 py-20 bg-nav-bg text-xl font-bold text-black rounded  mt-32">
